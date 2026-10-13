@@ -1,0 +1,510 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ayush Gupta | Full Stack Web Developer</title>
+  <meta name="description" content="Portfolio of Ayush Gupta, B.Tech CSE student at SRM Institute of Science and Technology, building responsive web applications with HTML, CSS and JavaScript.">
+  <meta name="author" content="Ayush Gupta">
+  <meta name="theme-color" content="#2D5BFF">
+  <meta property="og:title" content="Ayush Gupta | Full Stack Web Developer">
+  <meta property="og:description" content="B.Tech CSE student, front-end developer and AI enthusiast based in Delhi, India.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232D5BFF'/%3E%3Ctext x='32' y='43' font-family='Arial,sans-serif' font-size='30' font-weight='700' text-anchor='middle' fill='white'%3EAG%3C/text%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- set the saved theme early so the page doesn't flash -->
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem("ag-theme");
+        if (saved === "dark" || saved === "light") document.documentElement.setAttribute("data-theme", saved);
+      } catch (e) {}
+      document.documentElement.classList.add("js");
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- header / nav -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="Ayush Gupta, home">
+        <span class="brand-mark">AG</span>
+        <span class="brand-name">Ayush Gupta</span>
+      </a>
+
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="#home">Home</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#skills">Skills</a></li>
+          <li><a class="nav-link" href="#projects">Projects</a></li>
+          <li><a class="nav-link" href="#resume">Resume</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn theme-toggle" id="theme-toggle" type="button" aria-label="Switch between light and dark theme">
+          <span class="theme-icon" aria-hidden="true"></span>
+        </button>
+        <button class="icon-btn nav-toggle" id="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+          <span class="bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- home -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="status-pill reveal"><span class="dot" aria-hidden="true"></span>Open to entry-level Software Developer roles</p>
+          <h1 class="hero-title reveal" id="hero-title">
+            <span class="line">Ayush</span>
+            <span class="line accent">Gupta</span>
+          </h1>
+          <p class="hero-role reveal" aria-live="off"><span class="rotator" id="rotator">Full Stack Web Developer</span></p>
+          <p class="hero-lede reveal">
+            B.Tech CSE student at SRM Institute of Science and Technology. I build responsive web
+            applications with HTML, CSS and JavaScript, practise Data Structures and Algorithms in Java
+            and I am curious about Artificial Intelligence.
+          </p>
+          <div class="hero-cta reveal">
+            <a class="btn btn-primary" href="#projects">View projects</a>
+            <a class="btn btn-ghost" href="assets/Ayush_Gupta_Resume.pdf" download="Ayush_Gupta_Resume.pdf">Download resume</a>
+          </div>
+          <ul class="social-row reveal" aria-label="Profiles">
+            <li><a href="https://github.com/codewithayush-07" target="_blank" rel="noopener noreferrer">GitHub<span aria-hidden="true"> ↗</span></a></li>
+            <li><a href="https://www.linkedin.com/in/ayush-gupta-a4b253326" target="_blank" rel="noopener noreferrer">LinkedIn<span aria-hidden="true"> ↗</span></a></li>
+            <li><a href="https://leetcode.com/u/Ayush_Gupta001" target="_blank" rel="noopener noreferrer">LeetCode<span aria-hidden="true"> ↗</span></a></li>
+          </ul>
+        </div>
+
+        <figure class="code-card reveal" aria-label="Summary of Ayush as a JavaScript object">
+          <div class="code-bar" aria-hidden="true">
+            <span class="light"></span><span class="light"></span><span class="light"></span>
+            <span class="code-file">ayush.js</span>
+          </div>
+<pre class="code-body"><code><span class="c-kw">const</span> <span class="c-var">ayush</span> = {
+  <span class="c-key">role</span>:      <span class="c-str">"Full Stack Web Developer"</span>,
+  <span class="c-key">studying</span>:  <span class="c-str">"B.Tech CSE, SRM IST"</span>,
+  <span class="c-key">cgpa</span>:      <span class="c-num">9.7</span>,
+  <span class="c-key">stack</span>:     [<span class="c-str">"HTML5"</span>, <span class="c-str">"CSS3"</span>, <span class="c-str">"JavaScript"</span>],
+  <span class="c-key">dsa</span>:       <span class="c-str">"Java + LeetCode"</span>,
+  <span class="c-key">learning</span>:  <span class="c-str">"Full Stack Web Dev"</span>,
+  <span class="c-key">lookingFor</span>: <span class="c-str">"Entry-level SDE role"</span>,
+};<span class="caret" aria-hidden="true"></span></code></pre>
+        </figure>
+      </div>
+    </section>
+
+    <!-- about -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">About</p>
+          <h2 id="about-title">A CS student who likes building things that work in the browser</h2>
+        </header>
+
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              I am a Computer Science and Engineering student at SRM Institute of Science and Technology
+              with a CGPA of 9.7. I have hands-on experience building responsive web applications with
+              HTML, CSS and JavaScript, and I am now moving into full stack web development.
+            </p>
+            <p>
+              My foundation is Data Structures and Algorithms in Java, backed by regular problem solving
+              on LeetCode, plus object-oriented programming, operating systems, DBMS and computer networks.
+              I also have a keen interest in Artificial Intelligence and have completed an introductory
+              IBM SkillsBuild course on it.
+            </p>
+            <p>
+              I am looking for an entry-level Software Developer role where I can keep learning while
+              shipping real features.
+            </p>
+          </div>
+
+          <aside class="facts reveal" aria-label="Quick facts">
+            <dl>
+              <div><dt>Studying</dt><dd>B.Tech, Computer Science &amp; Engineering</dd></div>
+              <div><dt>University</dt><dd>SRM Institute of Science and Technology</dd></div>
+              <div><dt>Batch</dt><dd>2024 – 2028</dd></div>
+              <div><dt>Based in</dt><dd>Delhi, India</dd></div>
+              <div><dt>Languages</dt><dd>English, Hindi</dd></div>
+              <div><dt>Looking for</dt><dd>Entry-level Software Developer role</dd></div>
+            </dl>
+          </aside>
+        </div>
+
+        <ul class="stat-row reveal" aria-label="Highlights">
+          <li><strong>9.7<small>/10</small></strong><span>CGPA</span></li>
+          <li><strong>4</strong><span>Web projects built</span></li>
+          <li><strong>4</strong><span>Certifications</span></li>
+          <li><strong>1</strong><span>Front-end internship</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- skills -->
+    <section class="section section-alt" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Skills</p>
+          <h2 id="skills-title">What I work with</h2>
+        </header>
+
+        <div class="filter-bar reveal" role="group" aria-label="Filter skills by category">
+          <button class="filter-btn is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter-btn" type="button" data-filter="lang" aria-pressed="false">Languages</button>
+          <button class="filter-btn" type="button" data-filter="web" aria-pressed="false">Web</button>
+          <button class="filter-btn" type="button" data-filter="tools" aria-pressed="false">Tools</button>
+          <button class="filter-btn" type="button" data-filter="cs" aria-pressed="false">Core CS</button>
+          <button class="filter-btn" type="button" data-filter="ai" aria-pressed="false">AI &amp; Cloud</button>
+        </div>
+
+        <div class="skills-grid" id="skills-grid">
+          <article class="skill-card reveal" data-cat="lang">
+            <h3>Languages</h3>
+            <ul class="chips">
+              <li>Java</li><li>Python</li><li>TypeScript</li><li>JavaScript</li><li>SQL</li><li>C</li><li>C++</li>
+            </ul>
+          </article>
+          <article class="skill-card reveal" data-cat="web">
+            <h3>Web Development</h3>
+            <ul class="chips">
+              <li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>Bootstrap</li>
+            </ul>
+          </article>
+          <article class="skill-card reveal" data-cat="tools">
+            <h3>Tools &amp; Platforms</h3>
+            <ul class="chips">
+              <li>Git</li><li>GitHub</li><li>Terminal (Command Line)</li>
+            </ul>
+          </article>
+          <article class="skill-card reveal" data-cat="cs">
+            <h3>Core Concepts</h3>
+            <ul class="chips">
+              <li>Data Structures &amp; Algorithms (Java)</li><li>OOP</li><li>Operating Systems</li><li>DBMS</li><li>Computer Networks</li>
+            </ul>
+          </article>
+          <article class="skill-card reveal" data-cat="cs">
+            <h3>Problem Solving</h3>
+            <ul class="chips">
+              <li>DSA practice on LeetCode</li>
+            </ul>
+          </article>
+          <article class="skill-card reveal" data-cat="ai">
+            <h3>AI &amp; Cloud</h3>
+            <ul class="chips">
+              <li>Artificial Intelligence Fundamentals</li><li>Cloud (OCI) Fundamentals</li>
+            </ul>
+          </article>
+        </div>
+
+        <p class="learning-note reveal"><span class="pulse" aria-hidden="true"></span><span><strong>Currently learning:</strong> Full Stack Web Development</span></p>
+      </div>
+    </section>
+
+    <!-- projects -->
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Projects</p>
+          <h2 id="projects-title">Things I have built</h2>
+          <p class="section-sub">Four front-end projects, each built with HTML5, CSS3 and JavaScript.</p>
+        </header>
+
+        <div class="projects-grid">
+
+          <!-- TODO: point each "View code" link at that project's own repo -->
+          <article class="project-card reveal">
+            <div class="thumb" aria-hidden="true">
+              <svg viewBox="0 0 400 240" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <rect class="t-bg" width="400" height="240"/>
+                <rect class="t-surf" x="40" y="28" width="320" height="184" rx="10"/>
+                <rect class="t-line" x="40" y="28" width="320" height="26" rx="10"/>
+                <rect class="t-line" x="40" y="44" width="320" height="10"/>
+                <circle class="t-muted" cx="56" cy="41" r="3.5"/><circle class="t-muted" cx="68" cy="41" r="3.5"/><circle class="t-muted" cx="80" cy="41" r="3.5"/>
+                <circle class="t-acc" cx="82" cy="98" r="24"/>
+                <rect class="t-ink" x="120" y="80" width="130" height="10" rx="5"/>
+                <rect class="t-muted" x="120" y="100" width="100" height="7" rx="3.5"/>
+                <rect class="t-acc" x="120" y="118" width="52" height="16" rx="8"/>
+                <rect class="t-soft" x="58" y="152" width="82" height="44" rx="6"/>
+                <rect class="t-soft" x="159" y="152" width="82" height="44" rx="6"/>
+                <rect class="t-soft" x="260" y="152" width="82" height="44" rx="6"/>
+              </svg>
+            </div>
+            <div class="project-body">
+              <h3>Personal Portfolio Website</h3>
+              <p>A responsive portfolio presenting my profile, skills, projects and contact details. Clean layouts and consistent styling keep it easy to navigate on any screen size.</p>
+              <ul class="tags"><li>HTML5</li><li>CSS3</li><li>JavaScript</li></ul>
+              <div class="project-links">
+                <a href="https://github.com/codewithayush-07" target="_blank" rel="noopener noreferrer">View code<span aria-hidden="true"> ↗</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="thumb" aria-hidden="true">
+              <svg viewBox="0 0 400 240" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <rect class="t-bg" width="400" height="240"/>
+                <rect class="t-surf" x="40" y="28" width="320" height="184" rx="10"/>
+                <rect class="t-muted" x="62" y="48" width="70" height="7" rx="3.5"/>
+                <rect class="t-ink" x="62" y="62" width="120" height="16" rx="5"/>
+                <rect class="t-acc" x="62" y="146" width="22" height="40" rx="4"/>
+                <rect class="t-soft" x="94" y="124" width="22" height="62" rx="4"/>
+                <rect class="t-acc" x="126" y="136" width="22" height="50" rx="4"/>
+                <rect class="t-soft" x="158" y="108" width="22" height="78" rx="4"/>
+                <rect class="t-acc" x="190" y="130" width="22" height="56" rx="4"/>
+                <rect class="t-line" x="236" y="52" width="104" height="26" rx="6"/>
+                <rect class="t-acc" x="244" y="62" width="8" height="8" rx="4"/>
+                <rect class="t-muted" x="260" y="63" width="60" height="6" rx="3"/>
+                <rect class="t-line" x="236" y="88" width="104" height="26" rx="6"/>
+                <rect class="t-ink" x="244" y="98" width="8" height="8" rx="4"/>
+                <rect class="t-muted" x="260" y="99" width="48" height="6" rx="3"/>
+                <rect class="t-line" x="236" y="124" width="104" height="26" rx="6"/>
+                <rect class="t-acc" x="244" y="134" width="8" height="8" rx="4"/>
+                <rect class="t-muted" x="260" y="135" width="66" height="6" rx="3"/>
+                <rect class="t-line" x="236" y="160" width="104" height="26" rx="6"/>
+                <rect class="t-ink" x="244" y="170" width="8" height="8" rx="4"/>
+                <rect class="t-muted" x="260" y="171" width="40" height="6" rx="3"/>
+              </svg>
+            </div>
+            <div class="project-body">
+              <h3>Expense Tracker</h3>
+              <p>A web app to record income and expenses and keep track of the running balance. JavaScript DOM manipulation adds and removes transactions and updates the totals instantly.</p>
+              <ul class="tags"><li>HTML5</li><li>CSS3</li><li>JavaScript</li></ul>
+              <div class="project-links">
+                <a href="https://github.com/codewithayush-07" target="_blank" rel="noopener noreferrer">View code<span aria-hidden="true"> ↗</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="thumb" aria-hidden="true">
+              <svg viewBox="0 0 400 240" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <rect class="t-bg" width="400" height="240"/>
+                <rect class="t-surf" x="80" y="28" width="240" height="184" rx="10"/>
+                <rect class="t-ink" x="100" y="46" width="90" height="12" rx="6"/>
+                <rect class="t-line" x="100" y="72" width="200" height="30" rx="6"/>
+                <rect class="t-acc" x="110" y="81" width="12" height="12" rx="3"/>
+                <path d="M112.5 87l2.8 3 5-6" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                <rect class="t-muted" x="132" y="85" width="100" height="6" rx="3"/>
+                <rect class="t-line" x="100" y="110" width="200" height="30" rx="6"/>
+                <rect class="t-soft" x="110" y="119" width="12" height="12" rx="3"/>
+                <rect class="t-ink" x="132" y="122" width="124" height="6" rx="3"/>
+                <rect class="t-line" x="100" y="148" width="200" height="30" rx="6"/>
+                <rect class="t-soft" x="110" y="157" width="12" height="12" rx="3"/>
+                <rect class="t-ink" x="132" y="160" width="84" height="6" rx="3"/>
+                <rect class="t-acc" x="100" y="186" width="56" height="14" rx="7"/>
+              </svg>
+            </div>
+            <div class="project-body">
+              <h3>To-Do List Application</h3>
+              <p>A task management app to add, complete and delete daily tasks. The list updates dynamically without reloading the page.</p>
+              <ul class="tags"><li>HTML5</li><li>CSS3</li><li>JavaScript</li></ul>
+              <div class="project-links">
+                <a href="https://github.com/codewithayush-07" target="_blank" rel="noopener noreferrer">View code<span aria-hidden="true"> ↗</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="thumb" aria-hidden="true">
+              <svg viewBox="0 0 400 240" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <rect class="t-bg" width="400" height="240"/>
+                <rect class="t-surf" x="110" y="24" width="180" height="192" rx="14"/>
+                <rect class="t-acc" x="134" y="44" width="132" height="92" rx="10"/>
+                <circle class="t-soft" cx="200" cy="90" r="26"/>
+                <circle class="t-acc" cx="200" cy="90" r="9"/>
+                <rect class="t-ink" x="134" y="148" width="92" height="9" rx="4.5"/>
+                <rect class="t-muted" x="134" y="164" width="60" height="6" rx="3"/>
+                <rect class="t-line" x="134" y="180" width="132" height="5" rx="2.5"/>
+                <rect class="t-acc" x="134" y="180" width="54" height="5" rx="2.5"/>
+                <polygon class="t-ink" points="168,196 158,201 168,206"/>
+                <circle class="t-ink" cx="200" cy="201" r="9"/>
+                <polygon fill="#fff" points="197,197 205,201 197,205"/>
+                <polygon class="t-ink" points="232,196 242,201 232,206"/>
+              </svg>
+            </div>
+            <div class="project-body">
+              <h3>Music Player</h3>
+              <p>A browser-based music player with play, pause and track navigation controls. The interface is responsive and audio playback is handled in JavaScript.</p>
+              <ul class="tags"><li>HTML5</li><li>CSS3</li><li>JavaScript</li></ul>
+              <div class="project-links">
+                <a href="https://github.com/codewithayush-07" target="_blank" rel="noopener noreferrer">View code<span aria-hidden="true"> ↗</span></a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- resume -->
+    <section class="section section-alt" id="resume" aria-labelledby="resume-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Resume</p>
+          <h2 id="resume-title">Experience, education and certifications</h2>
+        </header>
+
+        <div class="resume-grid">
+          <div class="timeline-col">
+            <h3 class="col-title reveal">Experience</h3>
+            <ol class="timeline">
+              <li class="reveal">
+                <p class="when">Oct 2026 – Nov 2026 · Remote</p>
+                <h4>Front End Developer Intern, CodeSoft</h4>
+                <ul>
+                  <li>Worked on front-end web development tasks using HTML, CSS and JavaScript during a virtual internship.</li>
+                  <li>Built responsive, user-friendly web pages and applied core front-end concepts to real project tasks.</li>
+                </ul>
+              </li>
+            </ol>
+
+            <h3 class="col-title reveal">Education</h3>
+            <ol class="timeline">
+              <li class="reveal">
+                <p class="when">2024 – 2028 · CGPA 9.7 / 10</p>
+                <h4>B.Tech, Computer Science &amp; Engineering</h4>
+                <p class="where">SRM Institute of Science and Technology</p>
+                <p class="note">Relevant coursework: Data Structures and Algorithms, Object-Oriented Programming, Operating Systems, DBMS, Computer Networks, C/C++</p>
+              </li>
+              <li class="reveal">
+                <p class="when">2023 · 85.8%</p>
+                <h4>Senior Secondary (Class XII)</h4>
+                <p class="where">Little Flower Public Sr. Sec. School, Delhi</p>
+              </li>
+              <li class="reveal">
+                <p class="when">2021 · 94%</p>
+                <h4>Secondary (Class X)</h4>
+                <p class="where">Little Flower Public Sr. Sec. School, Delhi</p>
+              </li>
+            </ol>
+          </div>
+
+          <aside class="resume-side">
+            <div class="download-card reveal">
+              <p class="eyebrow">Resume / CV</p>
+              <h3>Get the one-page PDF</h3>
+              <p>Everything on this page in a format you can save, print or forward.</p>
+              <div class="download-actions">
+                <a class="btn btn-primary" href="assets/Ayush_Gupta_Resume.pdf" download="Ayush_Gupta_Resume.pdf">Download resume</a>
+                <a class="btn btn-ghost" href="assets/Ayush_Gupta_Resume.pdf" target="_blank" rel="noopener noreferrer">View in browser</a>
+              </div>
+            </div>
+
+            <div class="side-card reveal">
+              <h3>Certifications</h3>
+              <ul class="cert-list">
+                <li><strong>Oracle Cloud Infrastructure Certified Foundations Associate</strong><span>Oracle University · Oct 2026</span></li>
+                <li><strong>Getting Started with Artificial Intelligence</strong><span>IBM SkillsBuild · Jul 2026</span></li>
+                <li><strong>Wireless 5G Overview</strong><span>Infosys Springboard · Oct 2026</span></li>
+                <li><strong>Alpha (DSA with Java)</strong><span>Apna College</span></li>
+              </ul>
+            </div>
+
+            <div class="side-card reveal">
+              <h3>Achievements &amp; participation</h3>
+              <ul class="cert-list">
+                <li><strong>Active on LeetCode</strong><span>Solving Data Structures and Algorithms problems</span></li>
+                <li><strong>Participant, brAInwave 2024</strong><span>Hackathon at Delhi Technological University (DTU), 25–26 October 2024</span></li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">Let&rsquo;s talk about an opportunity</h2>
+          <p class="section-sub">I am looking for an entry-level Software Developer role. Send a message and I will reply by email.</p>
+        </header>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <ul class="contact-list">
+              <li>
+                <span class="label">Email</span>
+                <span class="value-row">
+                  <a href="mailto:ayushgupta7306@gmail.com" id="email-text">ayushgupta7306@gmail.com</a>
+                  <button class="copy-btn" id="copy-email" type="button" data-copy="ayushgupta7306@gmail.com">Copy</button>
+                </span>
+              </li>
+              <li>
+                <span class="label">Phone</span>
+                <span class="value-row"><a href="tel:+917042482600">+91 70424 82600</a></span>
+              </li>
+              <li>
+                <span class="label">Location</span>
+                <span class="value-row">Delhi, India</span>
+              </li>
+              <li>
+                <span class="label">Elsewhere</span>
+                <span class="value-row links">
+                  <a href="https://github.com/codewithayush-07" target="_blank" rel="noopener noreferrer">GitHub</a>
+                  <a href="https://www.linkedin.com/in/ayush-gupta-a4b253326" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                  <a href="https://leetcode.com/u/Ayush_Gupta001" target="_blank" rel="noopener noreferrer">LeetCode</a>
+                </span>
+              </li>
+            </ul>
+          </div>
+
+          <form class="contact-form reveal" id="contact-form" novalidate>
+            <div class="field">
+              <label for="name">Your name</label>
+              <input id="name" name="name" type="text" autocomplete="name" required minlength="2" maxlength="60" aria-describedby="name-error">
+              <p class="field-error" id="name-error" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <label for="email">Email address</label>
+              <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-error">
+              <p class="field-error" id="email-error" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <label for="subject">Subject</label>
+              <input id="subject" name="subject" type="text" required minlength="3" maxlength="100" aria-describedby="subject-error">
+              <p class="field-error" id="subject-error" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required minlength="10" maxlength="1000" aria-describedby="message-error message-count"></textarea>
+              <div class="field-foot">
+                <p class="field-error" id="message-error" aria-live="polite"></p>
+                <p class="counter" id="message-count">0 / 1000</p>
+              </div>
+            </div>
+            <button class="btn btn-primary" type="submit">Send message</button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year">2026</span> Ayush Gupta. Built with HTML, CSS and JavaScript.</p>
+      <a class="to-top" href="#top">Back to top <span aria-hidden="true">↑</span></a>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
